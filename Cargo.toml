@@ -2,6 +2,7 @@
 [workspace]
 resolver = "2"
 members = ["crates/*"]
+exclude = ["claude-view-tray/src-tauri"]
 
 [workspace.package]
 version = "0.17.0"

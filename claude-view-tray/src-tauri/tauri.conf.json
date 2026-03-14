@@ -1,0 +1,33 @@
+{
+  "productName": "claude-view-tray",
+  "version": "0.1.0",
+  "identifier": "com.claudeview.tray",
+  "build": {
+    "frontendDist": "../src"
+  },
+  "app": {
+    "windows": [
+      {
+        "label": "main",
+        "title": "claude-view",
+        "url": "index.html",
+        "width": 1280,
+        "height": 800,
+        "visible": false,
+        "decorations": true,
+        "resizable": true
+      }
+    ],
+    "security": {}
+  },
+  "bundle": {
+    "active": true,
+    "targets": ["nsis"],
+    "icon": [
+      "icons/icon.ico"
+    ],
+    "windows": {
+      "allowDowngrades": true
+    }
+  }
+}
